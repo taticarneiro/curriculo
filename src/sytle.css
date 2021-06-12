@@ -1,0 +1,76 @@
+:root {
+  --color-primary: #ff9d8e;
+  --color-secondary: #373741;
+
+  --font-primary: 'Spartan', sans-serif;
+  --font-secondary: 'Lato', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+
+  font-family: var(--font-primary);
+  grid-template-areas: 'info experiencias' 'contato experiencias';
+}
+
+#info {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 20px;
+
+  padding: 100px 50px 20px 50px;
+  grid-area: info;
+}
+
+.info__text {
+  padding: 0 50px;
+}
+
+#info h1 {
+  font-size: 43px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--color-secondary);
+}
+
+#contato {
+  background-color: var(--color-secondary);
+  padding: 30px 50px;
+
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  grid-area: contato;
+}
+
+.contato__titulo {
+  color: #ffffff;
+  border-bottom: 5px solid var(--color-primary);
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+#contato p {
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.info__foto {
+  width: 250px;
+  height: 250px;
+}
+
+#experiencias {
+  grid-area: experiencias;
+}
