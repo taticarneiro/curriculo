@@ -98,4 +98,46 @@ main {
 
 #experiencias {
   grid-area: experiencias;
+  padding: 90px 50px 50px;
+}
+
+.experiencias__content {
+  margin-bottom: 20px;
+}
+
+.experiencias__titulo {
+  color: var(--color-secondary);
+  border-bottom: 5px solid var(--color-primary);
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.experiencias__info {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  grid-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.experiencias__info span {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.experiencias__info p:first-child {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.experiencias__info p:nth-of-type(2) {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.experiencias__info > div {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
 }
