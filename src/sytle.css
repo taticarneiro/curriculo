@@ -141,3 +141,46 @@ main {
   flex-direction: column;
   grid-gap: 10px;
 }
+
+.experiencias--skills {
+  display: flex;
+  place-content: space-between;
+}
+
+.experiencias--skills > div {
+  grid-gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencias--skills .skills > div {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--color-secondary);
+}
+
+.experiencias--skills .skills__selecionado {
+  color: var(--color-primary);
+}
+
+@media (max-width: 801px) {
+  main {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      'info'
+      'contato'
+      'experiencias';
+  }
+
+  .info__text {
+    text-align: center;
+  }
+
+  #contato {
+    padding: 30px 20px;
+  }
+
+  #experiencias {
+    padding: 30px 20px 20px;
+  }
+}
